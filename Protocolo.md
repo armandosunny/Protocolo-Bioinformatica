@@ -37,6 +37,7 @@ Visualización de Resultados:
 ![Captura](Imagenes/6.png)
 
 Modificando la opción - -length_1 y - -length_2 a 40
+
 Comando:
 - trim_galore - -fastqc - -paired - -retain_unpaired - -length_1 40 - -length_2 40 ../THP_15M_1.fastq ../THP_15M_2.fastq - -output_dir ../Trim_Galore/THP15M_paired_50
 
@@ -199,6 +200,7 @@ Vemos que trabajar con lecturas pareadas es mejor
 
 ## Comparando con Quast
 Comandos:
+
 Clave: _15=original, tg=TrimGalore, tm=Trimmomatic, dy=DynamicTrim
 - python2 /home/yared/quast-4.5/quast.py contigs_15.fa contigs_15_tg.fa contigs_15_tm.fa contigs_15_dy.fa
 - python2 /home/yared/quast-4.5/quast.py contigs_15.fasta contigs_15_tg.fasta contigs_15_tm.fasta contigs_15_dy.fasta
